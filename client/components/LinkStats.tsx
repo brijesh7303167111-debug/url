@@ -62,8 +62,7 @@ export default function LinkStats({ code }: Props) {
     
     <div className="space-y-5 text-gray-200 divide-y divide-slate-700/50">
       
-      {/* 💥 NEW: Short URL Display - Made prominent and clickable */}
-      <div className="pt-0 pb-4">
+       <div className="pt-0 pb-4">
         <div className="font-extrabold text-xl mb-2 text-white flex items-center">
           <span className="text-red-400 mr-2">🚀</span> Short URL:
         </div>
@@ -77,7 +76,6 @@ export default function LinkStats({ code }: Props) {
         </a>
       </div>
       
-      {/* 1. Original URL Display (Now labeled clearly) */}
       <div className="pt-4 pb-3">
         <div className="font-bold text-lg mb-2 text-white">
           <span className="text-blue-400">🔗</span> Original URL:
@@ -92,15 +90,13 @@ export default function LinkStats({ code }: Props) {
         </a>
       </div>
 
-      {/* 2. Total Clicks - Text size increased for emphasis */}
-      <div className="flex justify-between items-center pt-4 pb-1">
+        <div className="flex justify-between items-center pt-4 pb-1">
         <span className="font-semibold text-xl flex items-center">
           <span className="text-yellow-400 mr-2">🎯</span> Total Clicks:
         </span>
         <span className="text-3xl font-bold text-white">{link.clicks}</span>
       </div>
 
-      {/* 3. Last Clicked - Text size improved */}
       <div className="flex justify-between items-center pt-4 pb-1">
         <span className="font-semibold text-gray-300 text-base">Last Clicked:</span>
         <span className="font-medium text-right text-sm sm:text-base">
@@ -108,7 +104,6 @@ export default function LinkStats({ code }: Props) {
         </span>
       </div>
 
-      {/* 4. Created At - Text size improved */}
       <div className="flex justify-between items-center pt-4">
         <span className="font-semibold text-gray-300 text-base">Created At:</span>
         <span className="font-medium text-right text-sm sm:text-base">
@@ -117,7 +112,6 @@ export default function LinkStats({ code }: Props) {
       </div>
     </div>
 
-    {/* Copy Button Section */}
     <div className="mt-8 flex justify-center">
       <button
         onClick={() => {

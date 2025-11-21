@@ -27,8 +27,7 @@ export default function Home() {
     const res = await api.get("/links");
     console.log("API Response:", res.data);
 
-    // If your API returns { links: [...] }
-    const linksArray = (Array.isArray(res.data) ? res.data : res.data.links || []).reverse();
+     const linksArray = (Array.isArray(res.data) ? res.data : res.data.links || []).reverse();
     setLinks(linksArray);
   } catch (err) {
     console.error(err);
@@ -151,7 +150,7 @@ export default function Home() {
     href={`${FRONTEND_URL}/${link.code}`}
     target="_blank"
     className="text-green-400 font-mono truncate max-w-[18rem]"
-    title={`${FRONTEND_URL}/${link.code}`} // tooltip on hover
+    title={`${FRONTEND_URL}/${link.code}`} 
   >
     {`${FRONTEND_URL}/${link.code}`}
   </a>
