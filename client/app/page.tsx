@@ -145,11 +145,11 @@ export default function Home() {
 </td>
 
            
-            <td className="py-4 px-2 border border-slate-600 flex items-center justify-between   truncate">
+            <td className="py-4 px-2 border border-slate-600 flex items-center justify-between   ">
   <a
     href={`${FRONTEND_URL}/${link.code}`}
     target="_blank"
-    className="text-green-400 font-mono truncate max-w-[18rem]"
+    className="text-green-400 font-mono truncate max-w-[23rem]"
     title={`${FRONTEND_URL}/${link.code}`} 
   >
     {`${FRONTEND_URL}/${link.code}`}
