@@ -4,7 +4,6 @@ client/node_modules/
 backend/node_modules/
 
 # Env files
-.env
 client/.env
 backend/.env
 
@@ -14,3 +13,4 @@ backend/.env
 # Build folders
 .next/
 dist/
+config.bat
